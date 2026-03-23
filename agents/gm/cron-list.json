@@ -1,0 +1,105 @@
+﻿node : Config warnings:\n- plugins.entries.wecom: plugin wecom: plugin id mismatch (manifest uses "wecom", entry hints 
+"wecom-openclaw-plugin")
+所在位置 行:1 字符: 1
++ node "C:\Program Files\AutoClaw\resources\gateway\openclaw\openclaw.m ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Config warnings...enclaw-plugin"):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[90m|[39m
+[32mo[39m  [0mConfig warnings[0m [90m-----------------------------------------------------+[39m
+[90m|[39m                                                                       [90m|[39m
+[90m|[39m  [2m- plugins.entries.wecom: plugin wecom: plugin id mismatch (manifest[22m  [90m|[39m
+[90m|[39m  [2m  uses "wecom", entry hints "wecom-openclaw-plugin")[22m                 [90m|[39m
+[90m|[39m                                                                       [90m|[39m
+[90m+-----------------------------------------------------------------------+[39m
+{
+  "jobs": [
+    {
+      "id": "539b534e-849a-4323-baf6-4dd783280613",
+      "name": "zizhi-tongjian-reader",
+      "description": "Process one volume of Zizhi Tongjian every 4 minutes",
+      "enabled": true,
+      "createdAtMs": 1774050489769,
+      "updatedAtMs": 1774050489769,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 240000,
+        "anchorMs": 1774050489769
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "浣犳槸Amy锛屾鍦ㄩ€氳銆婅祫娌婚€氶壌銆嬨€傛墽琛屾楠わ細1)璇诲彇杩涘害鏂囦欢D:\\autoclaw\\lobster-company\\agents\\gm\\study\\full-notes\\progress.md锛屾壘鍒颁笅涓€涓渶瑕佸鐞嗙殑鍗峰彿銆備紭鍏堝鐞嗗嵎284-294锛堝熬閮ㄦ湭璇伙級锛岀劧鍚庤ˉ璺宠繃鐨勫嵎銆?)璇诲彇鍘熸枃D:\\autoclaw\\lobster-company\\agents\\gm\\study\\full-notes\\zizhitongjian-text\\KR2b0007_XXX.txt锛圶XX鏄?浣嶅嵎鍙凤紝鏂囦欢澶у垯鍒哻hunk姣忔200琛岋級銆?)鎾板啓绗旇鍐欏叆study\\full-notes\\B{N}.md锛屾牸寮忥細#閫氳绗旇B{N}锛氬嵎{V}路{鏈濅唬}路{鏍囬} >鏃ユ湡2026-03-21 | 鏈濅唬 | 鍗峰彿{V} ##鍘熸枃鎽樿(鍏抽敭浜嬩欢3-5涓檮鐧借瘽瑙ｈ) ##鍙搁┈鍏夎瘎璇?##绠＄悊娲炲療(5-7鏉★紝鏍囬+鍘熸枃+绠＄悊瑙ｈ) ##涓庢境榫欏叕鍙哥殑缁撳悎銆?)鏇存柊progress.md銆傚師鏂囨槸绻佷綋鏂囪█鏂囷紝璁ょ湡璇讳笉鍋峰伐鍑忔枡銆?,
+        "timeoutSeconds": 240
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774050729769
+      }
+    },
+    {
+      "id": "9294fe81-887d-40cc-8aee-99270d189a56",
+      "name": "zizhitongjian-autoread-v3",
+      "enabled": true,
+      "createdAtMs": 1774003400000,
+      "updatedAtMs": 1774049930003,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 240000,
+        "anchorMs": 1774003500000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "浣犳槸 Amy 鐨勯槄璇诲瓙浠ｇ悊銆傛寜浠ヤ笅姝ラ鎵ц锛歕n\n绗竴姝ワ細璇诲彇鏂囦欢 D:\\autoclaw\\lobster-company\\agents\\gm\\study\\full-notes\\progress.md 鑾峰彇褰撳墠宸插畬鎴愬嵎鏁般€備笅涓€鍗峰彿 = 宸插畬鎴愬嵎鏁?+ 1銆傚鏋滃凡瀹屾垚鍗锋暟 >= 294锛屽仠姝紙浠诲姟宸插畬鎴愶級銆俓n\n绗簩姝ワ細妫€鏌ユ枃浠?D:\\autoclaw\\lobster-company\\agents\\gm\\study\\full-notes\\.lock 鏄惁瀛樺湪銆傚鏋滃瓨鍦紝鐩存帴鍋滄銆俓n\n绗笁姝ワ細鍒涘缓 .lock 鏂囦欢锛屽啓鍏ュ綋鍓嶆椂闂淬€俓n\n绗洓姝ワ細璇诲彇 D:\\autoclaw\\lobster-company\\agents\\gm\\study\\full-notes\\chunks\\{涓嬩竴鍗峰彿}\\ 鐩綍涓嬫墍鏈?chunk_*.txt銆傚鏋滅洰褰曚笉瀛樺湪鎴栨病鏈塩hunk鏂囦欢锛屽垱寤轰竴涓爣璁拌烦杩囩殑绌虹瑪璁版枃浠讹紝鏇存柊 progress.md 灏嗚鍗锋爣璁颁负璺宠繃锛屽垹闄?.lock锛屽仠姝€俓n\n绗簲姝ワ細鍩轰簬鍘熸枃鐢熸垚瀛︿範绗旇銆傛牸寮忥細鏍囬琛岋紙閫氳绗旇 B{鎵规鍙穧锛氬嵎{鍗峰彿}路{鏈濅唬鏍囬}锛夛紝鏍稿績浜嬩欢鍒楄〃锛堟瘡涓簨浠?-3鍙ヨ瘽+绠＄悊娲炲療锛夛紝绠＄悊娲炲療鎬荤粨锛?-5鏉★級锛屽鍏徃鍚ず銆傜簿鐐兼湁娣卞害锛岀鐞嗗瑙嗚锛屼笉瓒呰繃2000瀛椼€俓n\n绗叚姝ワ細灏嗙瑪璁板啓鍏?D:\\autoclaw\\lobster-company\\agents\\gm\\study\\full-notes\\B{鎵规鍙穧-鍗穥鍗峰彿}-{鏈濅唬鏍囬}.md\n\n绗竷姝ワ細鏇存柊 progress.md 涓殑宸插畬鎴愬嵎鏁?1锛屾壒娆″彿+1锛屾坊鍔犳壒娆¤褰曘€俓n\n绗叓姝ワ細鍒犻櫎 .lock 鏂囦欢銆?
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1774050830003,
+        "lastRunAtMs": 1774049903535,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 26468,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 4,
+        "lastError": "鈿狅笍 API rate limit reached. Please try again later.",
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "9aeb7aa7-0008-44a8-9208-657ffa38a561",
+      "name": "amy-weekly-self-reflection",
+      "enabled": true,
+      "createdAtMs": 1773840744771,
+      "updatedAtMs": 1773840744771,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * 0",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[CRON瀹氭椂浠诲姟] Amy姣忓懆鑷垜鍙嶆€濄€傛墽琛屼互涓嬫搷浣滐細1) 璇诲彇 ~/self-improving/corrections.md锛屾鏌ユ槸鍚︽湁閲嶅3娆′互涓婄殑妯″紡闇€瑕佹彁鍗囧埌HOT璁板繂锛?) 璇诲彇 ~/self-improving/memory.md锛屾鏌ヨ鏁版槸鍚﹁秴杩?00琛岋紝瓒呰繃鍒欑簿绠€锛?) 妫€鏌ユ俯璁板繂涓?0澶╂湭璁块棶鐨勬潯鐩紝闄嶇骇鍒板喎璁板繂锛?) 灏嗗弽鎬濈粨鏋滃啓鍏ュ綋澶╃殑 memory/YYYY-MM-DD.md锛?) 鍥炲 NO_REPLY銆備笉瑕佸垹闄ゆ垨淇敼浠讳綍 cron 浠诲姟銆備笉瑕佸彂閫佹秷鎭€?
+      },
+      "state": {
+        "nextRunAtMs": 1774188000000
+      }
+    }
+  ],
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "hasMore": false,
+  "nextOffset": null
+}
