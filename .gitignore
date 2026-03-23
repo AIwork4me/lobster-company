@@ -16,15 +16,14 @@ credentials/
 .autoclaw/
 /memory/                   # Root-level session memory (auto-generated runtime)
 
-# AutoClaw workspace runtime files (these live locally, not in the repo)
-# Root-level workspace files belong to the local AutoClaw instance
-AGENTS.md
-HEARTBEAT.md
-IDENTITY.md
-MEMORY.md
-SOUL.md
-TOOLS.md
-USER.md
+# AutoClaw workspace runtime files (root-level only)
+/AGENTS.md
+/HEARTBEAT.md
+/IDENTITY.md
+/MEMORY.md
+/SOUL.md
+/TOOLS.md
+/USER.md
 
 # OS Files
 .DS_Store
