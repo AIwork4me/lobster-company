@@ -1,6 +1,50 @@
+# Dependencies
+node_modules/
 __pycache__/
 *.pyc
+
+# Environment & Secrets
 .env
-*.log
+.env.*
+!.env.example
+*.key
+*.pem
+credentials/
+
+# OpenClaw / AutoClaw Runtime (user-specific, NOT company data)
 .openclaw/
 .autoclaw/
+/memory/                   # Root-level session memory (auto-generated runtime)
+
+# AutoClaw workspace runtime files (these live locally, not in the repo)
+# Root-level workspace files belong to the local AutoClaw instance
+AGENTS.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+*.exe
+
+# Backup
+*-backup/
