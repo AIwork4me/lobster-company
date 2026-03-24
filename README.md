@@ -16,6 +16,8 @@
   <strong>An ancient Chinese emperor managing 7 legendary Western AI founders.</strong>
 </p>
 
+> [🇨🇳 中文版](README_CN.md)
+
 ---
 
 ## 🤔 What Is This?

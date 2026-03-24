@@ -1,7 +1,7 @@
 # gstack 深度分析 — 资治通鉴视角下的批判式学习
 
 > 分析日期：2026-03-21
-> 分析人：Amy，澳龙公司总经理
+> 分析人：太宗，澳龙公司 CEO
 > 分析对象：https://github.com/garrytan/gstack — YC 总裁 Garry Tan 的 AI agent 软件工厂
 
 ---

@@ -2,7 +2,7 @@
 
 **工程师**: Cherny（AI工程师）  
 **日期**: 2026-03-22  
-**被审模块**: UserAuth（D:\autoclaw\lobster-company\agents\leike\mission-1\user_auth.py）  
+**被审模块**: UserAuth（agents/leike/mission-1/user_auth.py）
 **对比对象**: Leike 测试报告（REPORT.md）
 
 ---

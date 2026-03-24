@@ -4,40 +4,46 @@
 
 ```
 董事长 Alex
-  └─ 总经理 Amy（main agent）
-       └─ 产品研发部
-            ├─ 📋 产品小龙（PM）
-            ├─ 🏗️ 架构小龙（Architect）
-            ├─ 💻 开发小龙（Dev）
-            └─ 🧪 测试小龙（Tester）
+  └─ CEO 太宗 (Taizong)
+       ├─ 🔭 Richards（侦察兵 / Scout）
+       ├─ 🏗️ Steinberger（架构师 / Architect）
+       ├─ 🧠 Cherny（AI 工程师）
+       ├─ 💻 Chase（全栈工程师）
+       ├─ ⚙️ Packer（运维工程师 / DevOps）
+       ├─ 🛡️ Leike（测试工程师 / QA）
+       └─ 📋 Sanger（产品经理 / PM）
 ```
 
 ## 协作流程
 
 ```
-PM 接收需求 → 写 PRD
+Sanger 接收需求 → 写 PRD
     ↓
-架构师 评审 PRD → 出架构方案
+Steinberger 评审 PRD → 出架构方案
     ↓
-开发 按架构实现 → 自测
+Cherny / Chase 按架构实现 → 自测
     ↓
-测试 编写用例 → 执行测试 → 出报告
+Leike 编写用例 → 执行测试 → 出报告
     ↓
-PM 验收 → 上线
+Sanger 验收 → 上线
 ```
 
 ## Agent 配置
 
 | agentId | 名称 | Workspace | 角色 |
 |---------|------|-----------|------|
-| pm | 产品小龙 | D:\autoclaw\lobster-company\agents\pm | 产品经理 |
-| architect | 架构小龙 | D:\autoclaw\lobster-company\agents\architect | 技术架构师 |
-| dev | 开发小龙 | D:\autoclaw\lobster-company\agents\dev | 全栈开发工程师 |
-| tester | 测试小龙 | D:\autoclaw\lobster-company\agents\tester | 测试工程师（QA） |
+| taizong | 太宗 (Taizong) | agents/taizong | CEO |
+| richards | Richards | agents/richards | 侦察兵 (Scout) |
+| steinberger | Steinberger | agents/steinberger | 架构师 (Architect) |
+| cherny | Cherny | agents/cherny | AI 工程师 |
+| chase | Chase | agents/chase | 全栈工程师 |
+| packer | Packer | agents/packer | 运维工程师 (DevOps) |
+| leike | Leike | agents/leike | 测试工程师 (QA) |
+| sanger | Sanger | agents/sanger | 产品经理 (PM) |
 
 ## 通信规则
 
-- 所有龙虾向总经理 Amy 汇报
-- 龙虾之间通过 sessions_send 协作
-- 董事长 Alex 可以通过飞书直接 @任何龙虾
-- 敏捷站会：Amy 每天汇总各部门进展给 Alex
+- 所有 Agent 向 CEO 太宗汇报
+- Agent 之间通过 sessions_send 协作
+- 董事长 Alex 可以直接 @任何 Agent
+- 敏捷站会：太宗每天汇总各部门进展给 Alex

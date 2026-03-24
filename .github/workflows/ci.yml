@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run Mission 2 tests (Memory Manager)
+        run: python -m pytest agents/cherny/mission-2/test_memory.py -v
+
+      - name: Run Mission 3 tests (Code Analyzer)
+        run: python -m pytest agents/cherny/mission-3/tests/ -v
+
+      - name: Run Mission 4 tests (Log Analyzer)
+        run: python -m pytest agents/cherny/mission-4/tests/ -v
+
+      - name: Run Mission 6 tests (Project Pulse)
+        run: python -m pytest agents/cherny/mission-6/tests/ -v
+
+      - name: Run Mission 8 tests (Pipeline Framework)
+        run: python -m pytest agents/cherny/mission-8/tests/ -v
+
+      - name: Run Mission 9 tests (AI Daily Assistant)
+        run: python -m pytest agents/cherny/mission-9/tests/ -v
+
+      - name: Run Mission 10 tests (PR Queue)
+        run: python -m pytest agents/cherny/mission-10/tests/ -v
+
+      - name: Run Security Audit tests (Leike)
+        run: python -m pytest agents/leike/mission-1/test_user_auth.py -v

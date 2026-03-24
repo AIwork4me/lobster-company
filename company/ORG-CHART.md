@@ -5,13 +5,13 @@
 
 ## 总司令
 
-**Amy** — 总经理，定方向、搭班子、带队伍、拿结果
+**太宗 (Taizong)** — CEO，定方向、搭班子、带队伍、拿结果
 
 ## 军团编制
 
 | 角色 | 代号 | 命名 | 致敬人物 | 贡献 | 状态 |
 |------|------|------|---------|------|------|
-| 总经理 | Amy | Amy | — | 董事长赐名 | ✅ |
+| CEO | 太宗 | 太宗 (Taizong) | 唐太宗李世民 | 致敬千古一帝，以史为鉴 | ✅ |
 | 侦察兵 | Scout | **Richards** | Toran Bruce Richards | AutoGPT 创造者，引爆 AI Agent 概念 | ✅ |
 | 架构师 | Architect | **Steinberger** | Peter Steinberger | OpenClaw 创造者，个人 Agent 先驱 | ✅ |
 | AI工程师 | AI Eng | **Cherny** | Boris Cherny | Claude Code 创造者，AI 编程 Agent 标杆 | ✅ |
@@ -45,8 +45,8 @@ Sanger      → Agent 能不能变成爆款产品？（Cursor：$500M ARR）
 
 ```
                         ┌─────────┐
-                        │  Amy    │
-                        │ 总经理  │
+                        │ 太宗    │
+                        │  CEO    │
                         └────┬────┘
                              │
           ┌──────────────────┼──────────────────┐

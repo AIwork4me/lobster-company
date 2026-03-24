@@ -5,7 +5,7 @@
 
 | 角色 | 代号 | 命名 | 人物 | 为什么是他 |
 |------|------|------|------|-----------|
-| 总经理 | Amy | **Amy** | — | 董事长 Alex 赐名，保持原名 |
+| CEO | 太宗 | **太宗 (Taizong)** | 唐太宗李世民 | 致敬中国历史上最伟大的帝王，以史为鉴的管理哲学 |
 | 侦察兵 | Scout | **Richards** | **Toran Bruce Richards** | AutoGPT 创造者（Significant-Gravitas），2023年发布了第一个真正引爆全球的 AI Agent 项目，让全世界意识到"AI可以自主行动" |
 | 架构师 | Architect | **Steinberger** | **Peter Steinberger** | OpenClaw 创造者——一个人做出了引发 Agent 时代的产品，后来被 OpenAI 收编。他证明了"一个开发者 + AI Agent"可以改变行业 |
 | AI工程师 | AI Engineer | **Cherny** | **Boris Cherny** | Claude Code 创造者——Anthropic 内部打造了最好的 AI 编程 Agent，让 AI 写代码从概念变成现实，他自己100%的代码都由 Claude Code 写 |

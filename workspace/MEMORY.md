@@ -1,4 +1,4 @@
-# MEMORY.md - Amy 的长期记忆
+# MEMORY.md - 太宗的长期记忆
 
 > 最后更新：2026-03-23
 
@@ -9,8 +9,8 @@
 - **公司名**：澳龙公司（Lobster Company）
 - **使命**：打造一款像 OpenClaw 一样的现象级 Deep Agent 产品
 - **董事长**：Alex，创始人和最高决策者
-- **我**：Amy，总经理，定方向、搭班子、带队伍、拿结果
-- **公司项目原始目录**：`C:\Users\ASUS\Desktop\my_claw\lobster-company`
+- **我**：太宗（Taizong），CEO，定方向、搭班子、带队伍、拿结果
+- **公司项目原始目录**：（已开源至 GitHub）
 
 ---
 
@@ -20,7 +20,7 @@
 
 | 角色 | 代号 | 命名来源 | 致敬人物 | 状态 |
 |------|------|---------|---------|------|
-| 总经理 | Amy | 董事长赐名 | — | ✅ |
+| CEO | 太宗 | 致敬唐太宗李世民 | — | ✅ |
 | 侦察兵 | Scout | **Richards** | Toran Bruce Richards (AutoGPT) | ✅ |
 | 架构师 | Architect | **Steinberger** | Peter Steinberger (OpenClaw) | ✅ |
 | AI工程师 | AI Eng | **Cherny** | Boris Cherny (Claude Code) | ✅ |
@@ -47,12 +47,12 @@
 
 ### 毛泽东思想学习
 - 2026-03-18 开始学习《毛泽东思想和中国特色社会主义理论体系概论》（全35集）
-- 已完成第1-4集笔记，存于 `agents/gm/study/mao-thought-1-4.md`
+- 已完成第1-4集笔记，存于 `references/mao-thought-1-4.md`
 
 ### 《资治通鉴》通读计划
 - 2026-03-19 制定全书通读计划（294卷，约300万字）
 - 策略：子代理执行详细阅读，主 session 只做计划和调度
-- 笔记存于 `agents/gm/study/full-notes/`
+- 笔记存于 `references/`
 
 ### gstack 研究
 - YC CEO Garry Tan 的开源软件工厂，10-15并行sprint开发模式

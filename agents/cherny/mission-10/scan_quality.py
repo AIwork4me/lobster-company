@@ -1,8 +1,12 @@
 """扫描所有 pr_queue 代码文件并输出质量报告。"""
 import sys
 import os
+from pathlib import Path
 
-sys.path.insert(0, r"D:\autoclaw\lobster-company\agents\cherny\mission-3")
+# 使用相对路径定位 mission-3 的 codeanalyzer
+_this_dir = Path(__file__).resolve().parent
+_mission3_dir = _this_dir.parent / "mission-3"
+sys.path.insert(0, str(_mission3_dir))
 os.environ["PYTHONIOENCODING"] = "utf-8"
 
 # 修复 stdout 编码
@@ -25,7 +29,7 @@ files = [
     "pr_queue/webhook_handler.py",
 ]
 
-os.chdir(r"D:\autoclaw\lobster-company\agents\cherny\mission-10")
+os.chdir(str(_this_dir))
 
 for f in files:
     print(f"\n{'='*60}")
